@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>You're Offline</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: light dark;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 2rem;
+      background-color: #f4f4f4;
+      color: #333;
+      text-align: center;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #121212;
+        color: #e0e0e0;
+      }
+    }
+
+    img {
+      max-width: 100px;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+      opacity: 0.8;
+    }
+
+    .btn {
+      margin-top: 1.5rem;
+      padding: 0.75rem 1.5rem;
+      background: #449183;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .btn:hover {
+      background: #449183;
+    }
+  </style>
+</head>
+<body>
+  <!-- Optional logo -->
+  <img src="Content/Images/logo.png" alt="Site Logo" onerror="this.style.display='none'">
+
+  <h1>No Internet Connection</h1>
+  <p>You're currently offline. Please check your internet and try again.</p>
+  <a class="btn" href="index.html">Retry</a>
+</body>
+</html>
